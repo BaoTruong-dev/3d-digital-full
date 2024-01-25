@@ -34,7 +34,7 @@ const ProductW2 = () => {
         <p>Quay lại</p>
       </button>
       {/* <img className="mt-8" src={Rectangle41} alt="" /> */}
-      <div className="lg:h-[684px] lg:mt-8 max-lg:mt-6 max-lg:h-[316px] relative">
+      <div className="lg:h-[684px] lg:mt-8 max-lg:mt-6 max-lg:h-[316px] relative bg-gray-200">
         <Canvas
           // camera={{
           //   position: [0, 10, 30],
@@ -45,15 +45,15 @@ const ProductW2 = () => {
           camera={{
             position: [0, 10, 100],
             near: 0.1,
-            far: 100000,
+            far: 1000,
             fov: 45,
             zoom: 200
           }}
         >
-          {/* <directionalLight color="white" position={[-50, 10, 25]} />
-          <directionalLight color="white" position={[50, 10, 25]} /> */}
+          <directionalLight position={[0, 30, 70]} />
+          <ambientLight intensity={1} />
           <Suspense fallback={null}>
-            <Environment preset="forest" background blur={0.5} />
+            {/* <Environment preset="forest" background blur={0.5} /> */}
             <Model3d
               url={
                 isMobile ? 'models/moc_ban_2.glb' : '/models/moc_ban_2.glb'
@@ -61,10 +61,10 @@ const ProductW2 = () => {
             />
             <OrbitControls
               target={[0, 0, 0]}
-              maxDistance={100}
+              maxDistance={200}
               minDistance={10}
               minPolarAngle={0.5}
-              maxPolarAngle={1000}
+              maxPolarAngle={5}
             />
           </Suspense>
         </Canvas>
