@@ -4,24 +4,15 @@ import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCvnSE6j22XiCrkglnd6Ldy00_98FSDPy4",
-//   authDomain: "final-f0512.firebaseapp.com",
-//   projectId: "final-f0512",
-//   storageBucket: "final-f0512.appspot.com",
-//   messagingSenderId: "704251119830",
-//   appId: "1:704251119830:web:9313328d292dc486c7a177",
-//   measurementId: "G-PXFK2MB76W",
-// };
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAorerV_5XMOXPN-TmyPIt9_696M0j004Y',
-  authDomain: 'send-otp-908bf.firebaseapp.com',
-  projectId: 'send-otp-908bf',
-  storageBucket: 'send-otp-908bf.appspot.com',
-  messagingSenderId: '28443086821',
-  appId: '1:28443086821:web:078ed1f26e34b5e07c690c',
-  measurementId: 'G-31R2D67HN1',
+  apiKey: "AIzaSyDcsF2XqSTNUL6dYzdV2Pu9r0CY0jnvjQo",
+  authDomain: "test-b8210.firebaseapp.com",
+  projectId: "test-b8210",
+  storageBucket: "test-b8210.appspot.com",
+  messagingSenderId: "441444184494",
+  appId: "1:441444184494:web:0ddb388b2915bc4e6b983f",
+  measurementId: "G-EY6B9Y5K5L"
 };
 
 // Initialize Firebase
