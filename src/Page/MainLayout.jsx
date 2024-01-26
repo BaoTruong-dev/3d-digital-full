@@ -25,7 +25,7 @@ const MainLayout = () => {
     <div className="flex justify-between flex-col h-full">
       <Header />
       <div className="flex-1">
-        <Outlet />
+        {/* <Outlet /> */}
       </div>
       <Footer />
     </div>

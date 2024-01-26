@@ -26,13 +26,13 @@ const ProducW1 = () => {
 
   return (
     <div className="lg:px-16 max-lg:px-6">
-      <button
+      {/* <button
         onClick={handleBack}
         className="flex rounded-[999px] gap-2 border border-primary-500 px-4 py-2"
       >
         <img src={Back} alt="" />
         <p>Quay lại</p>
-      </button>
+      </button> */}
       {/* <img className="mt-8" src={Rectangle41} alt="" /> */}
       <div className="lg:h-[684px] lg:mt-8 max-lg:mt-6 max-lg:h-[316px] relative  bg-gray-200">
         <Canvas
@@ -80,7 +80,7 @@ const ProducW1 = () => {
         </Canvas>
         <Loader />
       </div>
-      <div className="my-4">
+      {/* <div className="my-4">
         <p className="my-font-bold max-lg:text-base lg:text-2xl">
           Mộc Bản 1
         </p>
@@ -107,7 +107,7 @@ const ProducW1 = () => {
         <CardDe />
         <CardPicture />
         <ComingSoon />
-      </div>
+      </div> */}
     </div>
   );
 };

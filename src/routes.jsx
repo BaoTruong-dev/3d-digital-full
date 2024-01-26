@@ -47,15 +47,23 @@ export const router = createBrowserRouter([
         element: <ProductPBC />,
       },
       { path: '/nln', element: <ProductNLN /> },
-      {
-        path: '/w1',
-        element: <ProductW1 />,
-      },
-      {
-        path: '/w2',
-        element: <ProductW2 />,
-      },
+      // {
+      //   path: '/w1',
+      //   element: <ProductW1 />,
+      // },
+      // {
+      //   path: '/w2',
+      //   element: <ProductW2 />,
+      // },
     ],
+  },
+  {
+    path: '/w1',
+    element: <ProductW1 />,
+  },
+  {
+    path: '/w2',
+    element: <ProductW2 />,
   },
   {
     path: '/verify',
