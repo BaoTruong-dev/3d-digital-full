@@ -36,34 +36,43 @@ const ProducW1 = () => {
       {/* <img className="mt-8" src={Rectangle41} alt="" /> */}
       <div className="lg:h-[684px] lg:mt-8 max-lg:mt-6 max-lg:h-[316px] relative  bg-gray-200">
         <Canvas
-
+          // camera={{
+          //   position: [0, 10, 100],
+          //   near: 0.1,
+          //   far: 100,
+          //   fov: 45,
+          // }}
           camera={{
-            position: [0, 10, 100],
+            // position: [0, 15, 70],
+            position: [0, 0, 50],
             near: 0.1,
             far: 1000,
             fov: 45,
-            zoom: 300
           }}
+
+
         >
 
           <Suspense fallback={null}>
             {/* <Environment preset="forest" background blur={0.5} /> */}
             <directionalLight position={[0, 30, 70]} />
-            <ambientLight intensity={1} />
+            <ambientLight intensity={3} />
             <Model3d
               url={
-                isMobile ? 'models/moc_ban_3.glb' : '/models/moc_ban_3.glb'
+                isMobile ? 'models/go_1.glb' : '/models/go_1.glb'
               }
             />
-            {/* target={[0, 0, 0]}
-            maxDistance={200}
-            minDistance={50}
-            minPolarAngle={0.5}
-            maxPolarAngle={Math.PI / 2} */}
+
             <OrbitControls
+              // target={[0, 0, 0]}
+              // maxDistance={200}
+              // minDistance={50}
+              // minPolarAngle={0.5}
+              // maxPolarAngle={5}
+
               target={[0, 0, 0]}
-              maxDistance={200}
-              minDistance={50}
+              maxDistance={80}
+              minDistance={30}
               minPolarAngle={0.5}
               maxPolarAngle={5}
             />
