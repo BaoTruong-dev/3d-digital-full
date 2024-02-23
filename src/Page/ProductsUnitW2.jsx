@@ -17,7 +17,7 @@ const ProductsUnitW2 = () => {
       <img
         loading="lazy"
         className="object-cover object-center max-lg:h-44 lg:h-80"
-        src="https://lh3.googleusercontent.com/proxy/wH4SAek5SCfuKcie-E7VGqmdiKkBbzBlLsIpElO2Pln6akPNyx1GcP6stAm7giTEKLt0VazDuCpX6tF6EWn6-illVi6jiAI15WjsgW-mKq3ww1XmnpB2GUU0ZA"
+        src="https://toquoc.mediacdn.vn/2019/1/31/5-dai-nam-nhat-thong-chi-15489284343381013431450.jpg"
         alt=""
       />
       <div className="p-5">

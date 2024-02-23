@@ -49,8 +49,8 @@ const ProductMiniPicture = () => {
               // target={[0, 15, 0]}
               maxDistance={200}
               minDistance={7}
-              // minPolarAngle={0.5}
-              // maxPolarAngle={Math.PI / 2}
+            // minPolarAngle={0.5}
+            // maxPolarAngle={Math.PI / 2}
             />
           </Suspense>
         </Canvas>

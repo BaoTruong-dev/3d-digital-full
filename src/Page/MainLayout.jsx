@@ -14,18 +14,18 @@ const MainLayout = () => {
   }, [pathname]);
   //  || localStorage.getItem("token")
 
-  // useEffect(() => {
-  //   if (token) {
-  //     nav("/");
-  //   } else {
-  //     nav("/login");
-  //   }
-  // }, [token, nav]);
+  useEffect(() => {
+    if (token) {
+      nav("/");
+    } else {
+      nav("/login");
+    }
+  }, [token, nav]);
   return (
     <div className="flex justify-between flex-col h-full">
       <Header />
       <div className="flex-1">
-        {/* <Outlet /> */}
+        <Outlet />
       </div>
       <Footer />
     </div>

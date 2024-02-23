@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^9.84.3",
     "@react-three/fiber": "^8.14.3",
+    "@react-three/postprocessing": "^2.15.12",
     "@reduxjs/toolkit": "^1.9.5",
     "@trendyol-js/react-carousel": "^3.0.2",
     "@types/three": "^0.156.0",
