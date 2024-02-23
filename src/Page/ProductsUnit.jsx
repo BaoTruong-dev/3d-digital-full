@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/Image/Rectangle41.png";
+import Image from "../assets/Image/ngomon.jpeg";
 import Ellipse from "../assets/SVG/Ellipse1.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -16,7 +16,7 @@ const Card = () => {
     >
       <img
         loading="lazy"
-        className="object-cover object-center max-lg:h-44 lg:h-80"
+        className="object-cover object-center w-full max-lg:h-44 lg:h-80"
         src={Image}
         alt=""
       />

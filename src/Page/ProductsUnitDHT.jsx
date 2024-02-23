@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/Image/nhaluuniem.jpeg';
+import Image from '../assets/Image/nhakyliem.jpeg';
 import Ellipse from '../assets/SVG/Ellipse1.svg';
 import { useNavigate } from 'react-router-dom';
 

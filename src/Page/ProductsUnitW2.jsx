@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/Image/qtg.jpeg";
+import Image from "../assets/Image/nho.png";
 import Ellipse from "../assets/SVG/Ellipse1.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const ProductsUnitW2 = () => {
       <img
         loading="lazy"
         className="object-cover object-center max-lg:h-44 lg:h-80"
-        src="https://toquoc.mediacdn.vn/2019/1/31/5-dai-nam-nhat-thong-chi-15489284343381013431450.jpg"
+        src={Image}
         alt=""
       />
       <div className="p-5">

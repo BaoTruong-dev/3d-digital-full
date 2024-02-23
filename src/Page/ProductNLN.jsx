@@ -8,7 +8,7 @@ import CardDe from './CardDe';
 import CardPicture from './CardPicture';
 import ComingSoon from './ComingSoon';
 import { useMediaQuery } from './hook';
-import image from '../assets/Image/nhaluuniem.jpeg';
+import image from '../assets/Image/nhakyliem.jpeg';
 
 const Model3d = ({ url }) => {
   const { scene } = useGLTF(url);

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/Image/qtg.jpeg";
+import Image from "../assets/Image/to.png";
 import Ellipse from "../assets/SVG/Ellipse1.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const ProductsUnitW1 = () => {
       <img
         loading="lazy"
         className="object-cover object-center max-lg:h-44 lg:h-80"
-        src="https://mynghengochoi.com/wp-content/uploads/2017/05/moc-ban.jpg"
+        src={Image}
         alt=""
       />
       <div className="p-5">

@@ -9,7 +9,7 @@ import CardDe from "./CardDe";
 import CardPicture from "./CardPicture";
 import ComingSoon from "./ComingSoon";
 import { useMediaQuery } from "./hook";
-import image from "../assets/Image/qtg.jpg";
+import image from "../assets/Image/nho.png";
 
 const Model3d = ({ url }) => {
   const { scene } = useGLTF(url);
