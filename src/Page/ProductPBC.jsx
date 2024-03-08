@@ -1,14 +1,15 @@
+/* eslint-disable react/no-unknown-property */
 import { Environment, Loader, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import { useNavigate } from "react-router-dom";
+import image from "../assets/Image/pbc.jpeg";
 import Back from "../assets/SVG/Back.svg";
 import Card from "./Card";
 import CardDe from "./CardDe";
 import CardPicture from "./CardPicture";
 import ComingSoon from "./ComingSoon";
 import { useMediaQuery } from "./hook";
-import image from "../assets/Image/pbc.jpeg";
 
 const Model3d = ({ url }) => {
   const { scene } = useGLTF(url);
@@ -23,6 +24,9 @@ const ProductPBC = () => {
   const handleBack = () => {
     nav("/");
   };
+
+
+
 
   return (
     <div className="lg:px-16 max-lg:px-6">

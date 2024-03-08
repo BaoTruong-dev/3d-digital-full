@@ -1,7 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Image from "../assets/Image/ngomon.jpeg";
 import Ellipse from "../assets/SVG/Ellipse1.svg";
-import { useNavigate } from "react-router-dom";
 
 const Card = () => {
   const nav = useNavigate();
