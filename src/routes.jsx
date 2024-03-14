@@ -14,63 +14,63 @@ import ProductW2 from './Page/ProductW2';
 import ProductPBC from './Page/ProductPBC';
 
 export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      {
-        path: '',
-        element: <Home />,
-      },
-      {
-        path: '/products',
-        element: <Product />,
-      },
-      {
-        path: '/mini',
-        element: <ProductMini />,
-      },
-      {
-        path: '/picture',
-        element: <ProductMiniPicture />,
-      },
-      {
-        path: '/de',
-        element: <ProductMiniDe />,
-      },
-      {
-        path: '/qtg',
-        element: <ProductQTG />,
-      },
-      {
-        path: '/pbc',
-        element: <ProductPBC />,
-      },
-      { path: '/nln', element: <ProductNLN /> },
-      {
-        path: '/w1',
-        element: <ProductW1 />,
-      },
-      {
-        path: '/w2',
-        element: <ProductW2 />,
-      },
-    ],
-  },
   // {
-  //   path: '/w1',
-  //   element: <ProductW1 />,
-  // },
-  // {
-  //   path: '/w2',
-  //   element: <ProductW2 />,
+  //   path: '/',
+  //   element: <MainLayout />,
+  //   children: [
+  //     {
+  //       path: '',
+  //       element: <Home />,
+  //     },
+  //     {
+  //       path: '/products',
+  //       element: <Product />,
+  //     },
+  //     {
+  //       path: '/mini',
+  //       element: <ProductMini />,
+  //     },
+  //     {
+  //       path: '/picture',
+  //       element: <ProductMiniPicture />,
+  //     },
+  //     {
+  //       path: '/de',
+  //       element: <ProductMiniDe />,
+  //     },
+  //     {
+  //       path: '/qtg',
+  //       element: <ProductQTG />,
+  //     },
+  //     {
+  //       path: '/pbc',
+  //       element: <ProductPBC />,
+  //     },
+  //     { path: '/nln', element: <ProductNLN /> },
+  //     {
+  //       path: '/w1',
+  //       element: <ProductW1 />,
+  //     },
+  //     {
+  //       path: '/w2',
+  //       element: <ProductW2 />,
+  //     },
+  //   ],
   // },
   {
-    path: '/verify',
-    element: <Verify />,
+    path: '/w1',
+    element: <ProductW1 />,
   },
   {
-    path: '/login',
-    element: <App />,
+    path: '/w2',
+    element: <ProductW2 />,
   },
+  // {
+  //   path: '/verify',
+  //   element: <Verify />,
+  // },
+  // {
+  //   path: '/login',
+  //   element: <App />,
+  // },
 ]);
