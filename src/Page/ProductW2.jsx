@@ -10,6 +10,7 @@ import CardPicture from "./CardPicture";
 import ComingSoon from "./ComingSoon";
 import { useMediaQuery } from "./hook";
 import image from "../assets/Image/nho.png";
+import Rectangle41 from "../assets/Image/Rectangle41.png";
 
 const Model3d = ({ url }) => {
   const { scene } = useGLTF(url);
@@ -28,13 +29,13 @@ const ProductW2 = () => {
 
   return (
     <div className="lg:px-16 max-lg:px-6">
-      {/* <button
+      <button
         onClick={handleBack}
         className="flex rounded-[999px] gap-2 border border-primary-500 px-4 py-2"
       >
         <img src={Back} alt="" />
         <p>Quay lại</p>
-      </button> */}
+      </button>
       {/* <img className="mt-8" src={Rectangle41} alt="" /> */}
       <div className="lg:h-[684px] lg:mt-8 max-lg:mt-6 max-lg:h-[316px]  bg-gray-200 relative">
         <Canvas
@@ -48,12 +49,7 @@ const ProductW2 = () => {
           <directionalLight intensity={1} position={[0, 10, 0]} />
           <ambientLight intensity={2.5} />
           <Suspense fallback={null}>
-
-            <Model3d
-              url={
-                isMobile ? 'models/go_2.glb' : '/models/go_2.glb'
-              }
-            />
+            <Model3d url={isMobile ? "models/go_2.glb" : "/models/go_2.glb"} />
             <OrbitControls
               target={[0, 0, 0]}
               maxDistance={80}
@@ -62,17 +58,20 @@ const ProductW2 = () => {
               maxPolarAngle={5}
             />
           </Suspense>
-
         </Canvas>
         <Loader />
       </div>
-      {/* <div className="my-4">
-        <p className="my-font-bold max-lg:text-base lg:text-2xl">
-          Mộc Bản 2
-        </p>
+      <div className="my-4">
+        <p className="my-font-bold max-lg:text-base lg:text-2xl">Mộc Bản 2</p>
         <p className="max-lg:text-xs lg:text-xl text-gray-600">
           <br />
-          Mộc Bản, còn được biết đến với chữ Hán là 木板, nằm ở số 1 đường 23 tháng 8, thành phố Huế, là điểm đến lý tưởng để khám phá văn hóa và lịch sử Việt Nam. Đây là một không gian lưu giữ và trưng bày những di tích, vật dụng cổ kính, tái hiện cuộc sống dân dụ xưa qua từng chi tiết nhỏ. Được UNESCO ghi tên vào danh mục Di sản thế giới từ ngày 11 tháng 12 năm 1993, Mộc Bản là điểm đến thu hút du khách, mang đến trải nghiệm tuyệt vời về văn hóa và lịch sử đậm chất Việt Nam.
+          Mộc Bản, còn được biết đến với chữ Hán là 木板, nằm ở số 1 đường 23
+          tháng 8, thành phố Huế, là điểm đến lý tưởng để khám phá văn hóa và
+          lịch sử Việt Nam. Đây là một không gian lưu giữ và trưng bày những di
+          tích, vật dụng cổ kính, tái hiện cuộc sống dân dụ xưa qua từng chi
+          tiết nhỏ. Được UNESCO ghi tên vào danh mục Di sản thế giới từ ngày 11
+          tháng 12 năm 1993, Mộc Bản là điểm đến thu hút du khách, mang đến trải
+          nghiệm tuyệt vời về văn hóa và lịch sử đậm chất Việt Nam.
         </p>
       </div>
       <img className="mx-auto" src={image} alt="" />
@@ -91,7 +90,7 @@ const ProductW2 = () => {
         <CardDe />
         <CardPicture />
         <ComingSoon />
-      </div> */}
+      </div>
     </div>
   );
 };
